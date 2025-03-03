@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #1A73E8;
+    font-size: 2rem;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h2 {
+    color: #1A73E8;
+    margin-bottom: 20px;
+}
+
+.select-button {
+    background: #1A73E8;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #E6FFE6;
+    border: 1px solid #00CC00;
+    color: #333;
+    animation: fadeIn 0.5s ease;
+}
+
+.result h3 {
+    color: #00CC00;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #1A73E8;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content a {
+    color: #F472B6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #FBBF24;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .select-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+}
